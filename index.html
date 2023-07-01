@@ -1,2 +1,43 @@
-<canvas></canvas>
-<script src="index.js"></script>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- red container div -->
+    <div class="container">
+        <!-- smaller red container div -->
+        <div class="smallerContainer">
+            <!-- player health -->
+            <div class="barContainer">
+                <div class="barBack"></div>
+                <div id="player-health">
+                </div>
+            </div>
+            <!-- timer -->
+            <div id="timer">10</div>
+            <!-- enemy health -->
+            <div class="barContainer">
+                <div class="barBack"></div>
+                <div id="enemy-health"></div>
+            </div>
+
+        </div>
+
+        <div class="finish">
+
+            <div id="displayFinish"></div>
+            <div id="again">Play Again</div>
+        </div>
+        <canvas></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="index.js"></script>
+</body>
